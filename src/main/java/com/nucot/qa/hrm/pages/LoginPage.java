@@ -5,9 +5,13 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.nucot.qa.hrm.constants.ApplicationConstants;
+import com.nucot.qa.hrm.util.ElementUtil;
+
 public class LoginPage {
 	
 	private WebDriver odriver;
+	private ElementUtil eleUtil;
 	
 	//1.declare as locators private
 
@@ -23,6 +27,8 @@ public class LoginPage {
 				{
 				
 					this.odriver=odriver;
+					eleUtil=new ElementUtil(odriver);
+				
 				
 				}
 			
@@ -47,14 +53,27 @@ public class LoginPage {
 		
 		public HomePage  doLogin(String un,String pw)
 		{
-			
+			/*
 			odriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			odriver.findElement(userName).sendKeys(un);
 			odriver.findElement(passWord).sendKeys(pw);
 			odriver.findElement(loginBtn).click();
 			return new HomePage(odriver);
 			
+			*/
 			
+			
+			
+			
+			
+			odriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ApplicationConstants.DEFAULT_MEDIUM_TIMEOUT));
+			eleUtil.doSendKeys(userName, un);
+			odriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ApplicationConstants.DEFAULT_MEDIUM_TIMEOUT));
+			eleUtil.doSendKeys(passWord, pw);
+			odriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ApplicationConstants.DEFAULT_MEDIUM_TIMEOUT));
+			eleUtil.doClick(loginBtn);
+			odriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ApplicationConstants.DEFAULT_MEDIUM_TIMEOUT));
+			return new HomePage(odriver);
 
 		}
 		

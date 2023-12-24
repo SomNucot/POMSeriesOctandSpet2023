@@ -13,7 +13,7 @@ public class HomePageTest  extends BaseTest{
 	@BeforeClass
 	void homePageSetup()
 	{
-		homePage=loginPage.doLogin("Admin", "admin123");
+		homePage=loginPage.doLogin(prop.getProperty("username").trim(),prop.getProperty("password").trim());
 		
 	}
 	

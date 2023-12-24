@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 
 import com.nucot.qa.hrm.constants.ApplicationConstants;
 
+
+
 public class LoginPageTest extends BaseTest{
 	
 	
@@ -31,7 +33,7 @@ public class LoginPageTest extends BaseTest{
 	@Test(priority=3)
 	public void doLoginPageTest()
 	{
-		loginPage.doLogin("Nucot","Nucot@123456");
+		loginPage.doLogin(prop.getProperty("username").trim(),prop.getProperty("password").trim());
 		
 		
 	}

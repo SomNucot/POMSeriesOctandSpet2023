@@ -2,32 +2,40 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-23T19:27:27 IST" name="Default suite" finished-at="2023-12-23T19:27:37 IST" duration-ms="9488">
+  <suite started-at="2023-12-24T10:28:40 IST" name="Nucot May Selenium TestNg seesions" finished-at="2023-12-24T10:29:26 IST" duration-ms="46491">
     <groups>
     </groups>
-    <test started-at="2023-12-23T19:27:27 IST" name="Default test" finished-at="2023-12-23T19:27:37 IST" duration-ms="9488">
-      <class name="com.nucot.qa.hrm.pagetests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nucot.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2023-12-23T19:27:27 IST" name="setUp" finished-at="2023-12-23T19:27:34 IST" duration-ms="7152" status="PASS">
+    <test started-at="2023-12-24T10:28:40 IST" name="HRM Application Nucot" finished-at="2023-12-24T10:29:26 IST" duration-ms="46491">
+      <class name="com.nucot.qa.hrm.pagetests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nucot.qa.hrm.pagetests.HomePageTest@71def8f8]" started-at="2023-12-24T10:28:40 IST" name="setUp" finished-at="2023-12-24T10:28:50 IST" duration-ms="10476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageCurrentUrl()[pri:1, instance:com.nucot.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2023-12-23T19:27:34 IST" name="loginPageCurrentUrl" finished-at="2023-12-23T19:27:34 IST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="homePageSetup()[pri:0, instance:com.nucot.qa.hrm.pagetests.HomePageTest@71def8f8]" started-at="2023-12-24T10:28:50 IST" name="homePageSetup" finished-at="2023-12-24T10:29:01 IST" duration-ms="11270" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageCurrentUrl -->
-        <test-method signature="loginPageTitle()[pri:2, instance:com.nucot.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2023-12-23T19:27:34 IST" name="loginPageTitle" finished-at="2023-12-23T19:27:34 IST" duration-ms="19" status="PASS">
+        </test-method> <!-- homePageSetup -->
+        <test-method signature="homePageUrlTest()[pri:1, instance:com.nucot.qa.hrm.pagetests.HomePageTest@71def8f8]" started-at="2023-12-24T10:29:01 IST" name="homePageUrlTest" finished-at="2023-12-24T10:29:03 IST" duration-ms="2103" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageTitle -->
-        <test-method signature="doLoginPageTest()[pri:3, instance:com.nucot.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2023-12-23T19:27:34 IST" name="doLoginPageTest" finished-at="2023-12-23T19:27:36 IST" duration-ms="1610" status="PASS">
+        </test-method> <!-- homePageUrlTest -->
+        <test-method signature="homePageTitleTest()[pri:2, instance:com.nucot.qa.hrm.pagetests.HomePageTest@71def8f8]" started-at="2023-12-24T10:29:03 IST" name="homePageTitleTest" finished-at="2023-12-24T10:29:03 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doLoginPageTest -->
-        <test-method is-config="true" signature="appClose()[pri:0, instance:com.nucot.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2023-12-23T19:27:36 IST" name="appClose" finished-at="2023-12-23T19:27:37 IST" duration-ms="646" status="PASS">
+        </test-method> <!-- homePageTitleTest -->
+        <test-method signature="systemUserDetailsTest()[pri:3, instance:com.nucot.qa.hrm.pagetests.HomePageTest@71def8f8]" started-at="2023-12-24T10:29:03 IST" name="systemUserDetailsTest" finished-at="2023-12-24T10:29:26 IST" duration-ms="22463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- systemUserDetailsTest -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.nucot.qa.hrm.pagetests.HomePageTest@71def8f8]" started-at="2023-12-24T10:29:26 IST" name="closeApp" finished-at="2023-12-24T10:29:26 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="appClose()[pri:0, instance:com.nucot.qa.hrm.pagetests.HomePageTest@71def8f8]" started-at="2023-12-24T10:29:26 IST" name="appClose" finished-at="2023-12-24T10:29:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appClose -->
-      </class> <!-- com.nucot.qa.hrm.pagetests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.nucot.qa.hrm.pagetests.HomePageTest -->
+    </test> <!-- HRM Application Nucot -->
+  </suite> <!-- Nucot May Selenium TestNg seesions -->
 </testng-results>

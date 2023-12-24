@@ -16,23 +16,23 @@ public class DriverFactory {
 	
 	public WebDriver odriver;
 	
-	
+	public static String highlight;
 	public Properties prop;
-	
+	public OptionsManager optionsManager;
 	
 	public WebDriver initDriver(Properties prop)
 	{
-		
+		optionsManager=new OptionsManager(prop);
 		
 		String browserName=prop.getProperty("browser").trim().toLowerCase();
-		
+		highlight = prop.getProperty("highlight").trim();
 		System.out.println("browser name is :"+browserName);
 		
 		if(browserName.equalsIgnoreCase("chrome")){
-			odriver=new ChromeDriver();
+			odriver=new ChromeDriver(optionsManager.getChromeOptions());
 		}
 		else if(browserName.equalsIgnoreCase("firefox")){
-			odriver=new FirefoxDriver();
+			odriver=new FirefoxDriver(optionsManager.getFirefoxOptions());
 		}	
 		else if(browserName.equalsIgnoreCase("safari")){
 			odriver=new SafariDriver();
